@@ -152,6 +152,9 @@ input {
 
 select {
     @apply outline-none cursor-pointer;
+    option {
+        @apply cursor-pointer;
+    }
 }
 
 .nav-menu {
