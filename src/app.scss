@@ -71,7 +71,7 @@ section {
 }
 
 .btn {
-    @apply py-1.5 px-4 rounded-[14px] border;
+    @apply py-1.5 px-5 rounded-[14px] border;
     &-primary {
         @apply bg-[#00ADC0] text-white border-transparent;
         &:hover {
@@ -144,7 +144,7 @@ input {
 }
 
 .input {
-    @apply outline-none text-sm bg-white w-full border border-[#E5E7EB] rounded-[14px] px-3 py-2 transition-all duration-300 ease-linear;
+    @apply outline-none text-sm bg-white w-full border border-[#E5E7EB] rounded-[14px] p-3 transition-all duration-300 ease-linear;
     &:focus {
         @apply border-[#00ADC0];
     }
@@ -200,6 +200,24 @@ select {
         @apply transition-all duration-300 ease-linear;
         &:hover {
             @apply border-[#00ADC0] transition-all duration-300 ease-linear;
+        }
+    }
+}
+
+.hidden-content {
+    @apply opacity-0 h-0 invisible transition-all duration-200 ease-linear;
+    &.show {
+        @apply opacity-100 h-auto visible transition-all duration-200 ease-linear;
+    }
+}
+
+.btn-accordion {
+    svg {
+        @apply rotate-0 transition-all duration-200 ease-linear;
+    }
+    &.active {
+        svg {
+            @apply rotate-180 transition-all duration-200 ease-linear;
         }
     }
 }
