@@ -212,6 +212,7 @@ select {
 }
 
 .btn-accordion {
+    @apply text-left;
     svg {
         @apply rotate-0 transition-all duration-200 ease-linear;
     }
